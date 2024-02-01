@@ -9,12 +9,9 @@ body {
   font-family: "Calibri", sans-serif;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 nav li {
