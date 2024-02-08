@@ -6,6 +6,10 @@
     <title>jairxortega.tech</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
     <nav class="navbar-container">
@@ -19,19 +23,18 @@
         </ul>
       </div>
     </nav>
-    <div class="section" id="section-1">
+    <div class="section" id="section1">
       <div class="profile-card">
         <img
           src="Images /ProfilePicture.jpg"
           alt="My profile picture"
           class="image-frame"
         />
-        <h3 class="Hello">Hello I'm</h3>
-        <h1 class="name-tag">Jair Ortega</h1>
+        <h2 class="Hello">Hello I'm Jair Ortega</h2>
+        <i data-lucide="graduation-cap"></i>
         <h3 class="title">
           Computer science student at Texas A&M - Commerce RELLIS Campus
         </h3>
-        <p class="description">Made new branch</p>
       </div>
     </div>
     <div class="section" id="section2">
@@ -54,12 +57,19 @@
     </div>
     <div class="section" id="section4">
       <h1>Projects</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quisquam
-        velit dolorem. Incidunt ducimus quidem vel nulla quae, omnis dignissimos
-        harum optio exercitationem illo sed, nihil autem eveniet nisi
-        architecto!
-      </p>
+      <div class="project-container">
+        <div class="project-card">
+          <h2>Project 1</h2>
+          <p>Description of Project 1</p>
+          <a href="link-to-project-1"><i data-lucide="github"></i></a>
+        </div>
+        <div class="project-card">
+          <h2>Project 2</h2>
+          <p>Description of Project 2</p>
+          <a href="link-to-project-2">View Project</a>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
     </div>
     <div class="section" id="section5">
       <h1>Contact</h1>
@@ -69,5 +79,8 @@
       </p>
     </div>
     <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
