@@ -3,10 +3,21 @@ html {
 }
 
 body {
-  background-color: #faf7f0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  background: #ffffff;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  padding: 0;
-  font-family: "Calibri", sans-serif;
+  color: rgba(60, 60, 67);
 }
 
 nav,
@@ -17,8 +28,7 @@ nav,
 .navbar-container {
   justify-content: space-around;
   align-items: center;
-  height: 15vh;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  height: 10vh;
 }
 
 .navbar-items {
@@ -28,21 +38,14 @@ nav,
 }
 
 a {
-  color: black;
   text-decoration: none;
   text-decoration-color: white;
-}
-
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
 }
 
 .name {
   display: inline;
   margin-left: 10px;
-  font-size: 2rem;
+  font-size: 21px;
 }
 
 .section {
