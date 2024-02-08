@@ -9,26 +9,58 @@ body {
   font-family: "Calibri", sans-serif;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
+nav,
+.navbar-items {
+  display: flex;
 }
 
-nav li {
+.navbar-container {
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.navbar-items {
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.25rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.name {
   display: inline;
-  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 2rem;
 }
 
 .section {
-  width: 100vw; /* 100% of the viewport width */
-  height: 100vh; /* 100% of the viewport height */
-  position: relative; /* or absolute, depending on your needs */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#section-1 {
+  margin-top: -80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .profile-card {
+  display: flex;
   width: 600px;
   padding: 20px;
   margin: 0 auto;
@@ -61,4 +93,10 @@ nav li {
 .description {
   font-size: 15px;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 991px) {
+  .mobile {
+    display: block;
+  }
 }
