@@ -37,14 +37,14 @@ nav,
   font-size: 14px;
 }
 
-a {
+.navbar-items a {
   text-decoration: none;
   text-decoration-color: white;
   color: rgba(60, 60, 67);
 }
 
-a:hover {
-  color: #0070f3;
+.navbar-items a:hover {
+  color: #6f42c1;
   transition: color 0.25s ease;
 }
 
@@ -151,7 +151,7 @@ a:hover {
 }
 
 .project-card {
-  width: 200px;
+  width: 400px;
   margin: 20px;
   padding: 20px;
   border: 1px solid transparent;
@@ -159,6 +159,35 @@ a:hover {
   text-align: center;
   font-family: sans-serif;
   background-color: #f6f6f7;
+  font-family: sans-serif;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+}
+
+.project-header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  background: #ffffff;
+  border-radius: 6px;
+  transition: background color 0.25s;
+  color: #6f42c1;
+}
+.project-card p {
+  color: rgba(60, 60, 67, 0.78); /* Change this to the desired color */
+}
+
+.project-gif {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid transparent;
 }
 
 @media only screen and (max-width: 991px) {
