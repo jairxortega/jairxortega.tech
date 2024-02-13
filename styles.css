@@ -163,13 +163,7 @@ nav,
   color: rgba(60, 60, 67, 0.78); /* Change this to the desired color */
   font-size: 14px;
   font-weight: 500;
-  display: flex;
   align-items: center;
-}
-
-.code {
-  width: 14px;
-  height: 14px;
 }
 
 #section3 {
