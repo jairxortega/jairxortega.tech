@@ -1,0 +1,37 @@
+/* nav.css */
+/* nav.css */
+.nav,
+.navbar-items {
+    display: flex;
+}
+
+.name {
+    display: inline;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(60, 60, 67);
+}
+
+.navbar-container {
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    display: flex;
+}
+
+.navbar-items {
+    list-style: none;
+    gap: 2rem;
+    font-size: 14px;
+}
+
+.navbar-items a {
+    text-decoration: none;
+    color: rgba(60, 60, 67);
+}
+
+.navbar-items a:hover {
+    color: #6589f5;
+    transition: color 0.25s ease;
+}

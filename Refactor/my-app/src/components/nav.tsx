@@ -1,10 +1,11 @@
 import React from "react";
-import "./nav.scss";
+import "./nav.css";
 
 const NavBar = () => {
   return (
-    <nav className="nav">
-      <ul>
+    <nav className="navbar-container">
+      <div className="name">jairxortega.tech</div>
+      <ul className="navbar-items">
         <li>
           <a href="about">About</a>
         </li>
